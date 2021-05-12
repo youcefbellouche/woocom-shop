@@ -1,0 +1,46 @@
+### Add to Cart
+POST https://groceryapp.snippetcoder.com/wp-json/wc/v3/addtocart?consumer_key=ck_8ccbe6f31d7134d5af8f3f7591bf71de2d2810c3&consumer_secret=cs_92c5a65b33b7f16fb2ac450e6d742b8a70fd598e HTTP/1.1
+content-type: application/json
+
+{
+    "user_id": 5, 
+    "products" : 
+    [
+        {
+            "product_id": 61,
+            "quantity": 1
+        },
+        {
+            "product_id": 18,
+            "quantity": 1
+        },
+        {
+            "product_id": 39,
+            "quantity": 2
+        }
+    ]
+}
+
+### Get Cart List
+GET https://groceryapp.snippetcoder.com/wp-json/wc/v3/cart?user_id=5&consumer_key=ck_8ccbe6f31d7134d5af8f3f7591bf71de2d2810c3&consumer_secret=cs_92c5a65b33b7f16fb2ac450e6d742b8a70fd598e HTTP/1.1
+content-type: application/json
+
+### Get Products
+GET https://groceryapp.snippetcoder.com/wp-json/wc/v3/products?include=68&per_page=1&page=1&&consumer_key=ck_8ccbe6f31d7134d5af8f3f7591bf71de2d2810c3&consumer_secret=cs_92c5a65b33b7f16fb2ac450e6d742b8a70fd598e HTTP/1.1
+
+### Get Product Details
+GET https://groceryapp.snippetcoder.com/wp-json/wc/v3/products/68?consumer_key=ck_8ccbe6f31d7134d5af8f3f7591bf71de2d2810c3&consumer_secret=cs_92c5a65b33b7f16fb2ac450e6d742b8a70fd598e HTTP/1.1
+
+### Get Variable Product Details
+GET https://groceryapp.snippetcoder.com/wp-json/wc/v3/products/68/variations?consumer_key=ck_8ccbe6f31d7134d5af8f3f7591bf71de2d2810c3&consumer_secret=cs_92c5a65b33b7f16fb2ac450e6d742b8a70fd598e HTTP/1.1
+
+
+### Validate Coupon
+//https://groceryapp.snippetcoder.com/wp-json/wc/v3/coupons?search=100Off&per_page=1&page=1&consumer_key=ck_8ccbe6f31d7134d5af8f3f7591bf71de2d2810c3&consumer_secret=cs_92c5a65b33b7f16fb2ac450e6d742b8a70fd598e
+
+
+### Get Shipping Address
+GET https://groceryapp.snippetcoder.com/wp-json/wc/v3/customers/5?consumer_key=ck_8ccbe6f31d7134d5af8f3f7591bf71de2d2810c3&consumer_secret=cs_92c5a65b33b7f16fb2ac450e6d742b8a70fd598e HTTP/1.1
+
+### Get All Countries
+GET https://groceryapp.snippetcoder.com/wp-json/wc/v3/data/countries/?consumer_key=ck_8ccbe6f31d7134d5af8f3f7591bf71de2d2810c3&consumer_secret=cs_92c5a65b33b7f16fb2ac450e6d742b8a70fd598e HTTP/1.1
